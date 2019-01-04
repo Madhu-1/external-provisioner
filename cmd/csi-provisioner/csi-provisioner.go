@@ -19,11 +19,12 @@ package main
 import (
 	goflag "flag"
 	"fmt"
-	flag "github.com/spf13/pflag"
 	"math/rand"
 	"os"
 	"strconv"
 	"time"
+
+	flag "github.com/spf13/pflag"
 
 	"github.com/golang/glog"
 
@@ -34,11 +35,12 @@ import (
 
 	"google.golang.org/grpc"
 
+	"strings"
+
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
-	"strings"
 
 	utilfeature "k8s.io/apiserver/pkg/util/feature"
 	utilflag "k8s.io/apiserver/pkg/util/flag"
